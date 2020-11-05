@@ -17,8 +17,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        String contraseña="";
+  String contraseña="";
         byte intentos=3;
         
         Scanner teclado = new Scanner(System.in);
@@ -37,19 +36,19 @@ public class Main {
                 contraseña=teclado.next();
                 intentos--;
                 
-                
-                if (intentos == 1){
+             //mario: te comento este if   
+              /*  if (intentos == 1){
                     System.out.println("INTRODUCE LA CONTRASEÑA DE NUEVO");
                     System.out.println("Te queda " +intentos+ " intento");
                     contraseña=teclado.next();
-                    intentos--;
+                    intentos--;*/
                 if (contraseña.equals("DAW")){
                      System.out.println("ENHORABUENA, HAS ACCEDIDO AL SISTEMA");                  
                 }
                 else {
                     System.out.println("ERROR, LA CONTRASEÑA NO ES CORRECTA");
                     }
-                } //cierre primer if
+                //} //cierre primer if
              } //cierre while
         } //cierre primer else
     } //cierre de la clase
